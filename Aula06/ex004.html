@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        *{
+            background-color: rgb(58, 117, 66);
+            color: white;
+        }
+    </style>
+</head>    
+<body>
+    <h1>EU AMO MINHA NAMORADA<br></h1>
+    <script>
+        //variaveis
+        var n1 = 3;
+        var n2 = 6;
+        var nome;
+        //Janela de comando
+        nome = window.prompt('Informe seu nome:');
+        //escrevendo na pagina
+        document.write(`Seu nome é ${nome} e elanao tem ${nome.length} letras`);
+        document.write(`<br>Seu nome em letra maiuscula ${nome.toUpperCase()}`);
+        //convertendo tipo var para Int explicitamente
+        //tambem tem o "parseFloat" e o variavel.toString();
+        var soma = parseInt(n1) + parseInt(n2);
+        document.write(`<br>A soma dos numeros e ${soma}`);
+        //Fixar 2 pontos flutuantes apos a virgula
+            //n1.toFixed(2);
+        document.write(`<br> ${n1.toFixed(2)}`);
+        //formatar a virgula e o ponto final
+            //n1.toFixed(2).replace('.',',');
+        document.write(`<br> ${n1.toFixed(2).replace('.',',')}`);    
+        //localizar o tipo de moeda brasileira
+        //outros possiveis dados são 'USD','EUR',
+            //n1.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'});
+        document.write(`<br> ${n1.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}`);
+   </script>
+</body>
+</html> 

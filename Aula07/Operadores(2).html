@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        *{
+            background-color: rgb(58, 117, 66);
+            color: white;
+        }
+    </style>
+</head>    
+<body>
+    <h1>OPERADORES RELACIONAIS E LOGICOS<br></h1>
+    entrar no codigo fonte;
+    <script>
+        //OPERADORES RELACIONAIS
+        var n1 = 5;
+        var n2 = 8;
+
+        n1 > n2;    //maior
+        n1 < n2;    //menos
+        n1 >= n2;   //maior ou igual
+        n1 <= n2;   //menos ou igual
+        n1 == n2;   //igual(geral)
+        n1 != n2;   //diferente
+
+        //sinal de igual restrita ===
+        //sinal restritos comaparam o tipo, e não a grandeza da variavel.
+        //EXEMPLO:
+
+        n1 == '5';  //true
+        n1 == 5;    //true
+        n1 === '5'; //false
+        n1 === 5;   //true
+
+        /*
+            OPERADORES LOGICOS
+            '!' = NEGAÇÃO
+            '&&' = E
+            '||' = OU
+        */
+
+        /*
+            ORDEM DE PRECEDENCIA
+
+            1.ARITMETICO
+                1.()
+                2.%
+                3.**
+                4./
+                5.*
+                6.'-' ou '+'
+            2.RELACIONAIS
+                1.QUALQUER ORDEM
+            3.LOGICOS
+                1.'!'
+                2.'&&'
+                3.'||'
+            4.TERNARIOS
+                1.'?'
+                2.':'
+                exemplo:
+                    media >= 7.0 ? "aprovado":"reprovado";
+        */
+   </script>
+</body>
+</html> 

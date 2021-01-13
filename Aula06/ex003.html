@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body {
+            background-color: blue;
+            color: white;
+            font: normal 25pt Arial;
+        }
+        h1{
+            color: yellow;
+        }
+    </style>
+</head>    
+<body>
+   <h1>Hello World!</h1>
+   <p>Eu amo minha namorada</p>
+    <script>
+        //conversão de string (String(n) ou n.toString)
+        //Number.parseInt() e Number.parseFloat()
+        var n1 = Number(window.prompt('Digite um numero?'));
+        var n2 = Number(window.prompt('Digite outro numero?'));
+        var soma = n1 + n2;
+        window.alert(soma);
+        /*
+        INFORMAÇÕES
+        Formas de concatenar{
+            antiga{
+                CODIGO: 'O aluno ' + nome + ' tem ' + idade + ' e tirou ' + nota + '.'
+                RESULTADO: 'O aluno Gustavo tem 41 e tirou 5.5.'
+            }
+            nova{
+                CODIGO: `O aluno ${nome} tem ${idade} e tirou ${nota}`
+                RESULTADO: 'O aluno Gustavo tem 41 e tirou 5.5' 
+            }
+        }
+        formatando string{
+            s.length (verifica o tamanho da string)
+            s.toUpperCase() (joga todas as palavras em maiusculo)
+            s.toLowerCase()  (joga todas as palavras em minusculo)
+        }       
+        */
+    </script>
+</body>
+</html>
